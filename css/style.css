@@ -31,6 +31,10 @@ address {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+button {
+    outline: 0 !important;
+}
+
 a {
     transition: linear .2s;
 }
@@ -40,11 +44,16 @@ a:hover {
     transition: linear .2s;
 }
 
+.btn-clear {
+    border: none;
+    background: transparent;
+}
+
 .page-wraper {}
 
 .left-sidebar {
     background: #051958;
-    width: 300px;
+    width: 280px;
     position: fixed;
     left: 0;
     top: 0;
@@ -139,14 +148,14 @@ a:hover {
 .content-page {
     width: 100%;
     box-sizing: border-box;
-    padding-left: 315px;
-    padding-top: 40px;
+    padding-left: 295px;
 }
 
 .page-title {
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 600;
+    padding-top: 40px;
 }
 
 .welcome-msg {
@@ -295,3 +304,249 @@ a:hover {
 }
 
 .cart-view-title p i {}
+
+
+/* profile-overview css */
+.profile-overview {
+    background: #F5F6FA;
+    padding: 15px;
+    border-radius: 20px 0 0 20px;
+}
+
+.profile-overview .nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.profile-overview .nav button {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.profile-overview .nav button i {
+    font-size: 20px;
+}
+
+.drop-down {
+    padding: 0;
+    box-shadow: 0 3px 15px #8080801a;
+}
+
+.drop-down ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drop-down ul li {
+    border-bottom: 1px solid gainsboro;
+}
+
+.drop-down ul li a {
+    padding: 7px 20px;
+    display: block;
+    color: #31394D;
+}
+
+.profile {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile a {
+    font-size: 20px;
+    color: #3F1912;
+}
+
+.profile p {
+    margin: 0;
+    color: #5A15F2;
+    font-size: 14px;
+}
+
+.profile ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.profile ul li {
+    width: 25%;
+    padding: 2.5px;
+}
+
+.profile ul li p {
+    color: #3F1912;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.profile ul li button {
+    border: none;
+    background: #5A15F2;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 5px;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile ul li button:focus {
+    box-shadow: 0 0 0 3px #5b15f271;
+}
+
+.profile ul li button:hover i {
+    opacity: 1;
+    transition: linear .2s;
+}
+
+.profile ul li button i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    background: #fff;
+    color: #5A15F2;
+    padding: 3px 6px;
+    border-radius: 7px 0 5px 0;
+    opacity: 0;
+    transition: linear .2s;
+}
+
+.profile-pic {
+    background-image: url(../images/Group\ 182.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 130px;
+    width: 130px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.stats {
+    background: #fff;
+    padding: 15px 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.line-chart {}
+
+.line-chart table {
+    width: 100%;
+}
+
+.line-chart table thead {}
+
+.line-chart table thead tr {}
+
+.line-chart table thead tr th {
+    text-align: center;
+    font-size: 12px;
+    color: #00293B;
+    padding-bottom: 20px;
+}
+
+.line-chart table tbody {}
+
+.line-chart table tbody tr {}
+
+.line-chart table tbody tr td {
+    text-align: center;
+}
+
+.layer1 {
+    width: 10px;
+    margin: auto;
+    border-radius: 5px;
+    height: 220px;
+    background: #E1E2EB;
+    position: relative;
+}
+
+.layer2 {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background: #E8523F;
+    position: absolute;
+    bottom: 0;
+}
+
+.layer3 {
+    height: 120px;
+    width: 100%;
+    border-radius: 5px;
+    background: #F8B849;
+    position: absolute;
+    bottom: 0;
+}
+
+.layer4 {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: #F8C0D9;
+    position: absolute;
+    bottom: 0;
+}
+
+.line-chart-info {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.line-chart-info li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.line-chart-info li i {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.stats-btn {}
+
+.stats-btn a {
+    display: block;
+    margin-bottom: 10px;
+    background: #DAEFFE;
+    padding: 12px 20px;
+    border-radius: 10px;
+    position: relative;
+    color: #31394D;
+}
+
+.stats-btn a:focus {
+    box-shadow: 0 0 0 3px #4E73DF;
+}
+
+.stats-btn a i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.stats-btn a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.stats-btn a span {
+    font-size: 16px;
+    font-weight: 700;
+}
