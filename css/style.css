@@ -5,6 +5,32 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+p,
+a,
+i,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+sub,
+sub,
+area,
+form,
+span,
+small,
+embed,
+footer,
+strong,
+button,
+article,
+address {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 a {
     transition: linear .2s;
 }
@@ -18,7 +44,7 @@ a:hover {
 
 .left-sidebar {
     background: #051958;
-    width: 320px;
+    width: 300px;
     position: fixed;
     left: 0;
     top: 0;
@@ -113,6 +139,159 @@ a:hover {
 .content-page {
     width: 100%;
     box-sizing: border-box;
-    padding-left: 335px;
-    padding-right: 15px;
+    padding-left: 315px;
+    padding-top: 40px;
 }
+
+.page-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.welcome-msg {
+    background: #DAEFFE;
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.welcome-msg img {
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+    width: 170px;
+}
+
+.msg-text {
+    padding-right: 220px;
+}
+
+.msg-text h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.msg-text p {
+    margin-bottom: 0;
+}
+
+.card-view {
+    display: table;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #8080801a;
+    padding: 20px 25px;
+}
+
+.card-view:hover {
+    box-shadow: 0 0 25px #00000041;
+}
+
+.card-view img {
+    width: 60px;
+    margin-right: 20px;
+    display: table-cell;
+    max-width: none;
+    box-sizing: initial;
+    height: initial;
+}
+
+.card-view p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.num-card {
+    background: #F5F6FA;
+    text-align: center;
+    padding: 25px 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #8080801a;
+    border: 1px solid #dcdcdc24;
+}
+
+.num-card h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.num-card p {
+    margin: 0;
+}
+
+.weight-cart-view {
+    position: relative;
+}
+
+.weight-cart-view .weight {
+    font-size: 10px;
+    font-style: italic;
+    position: absolute;
+    transform: rotate(270deg);
+    width: 150px;
+    display: flex;
+    align-content: center;
+    bottom: 100px;
+    left: -75px;
+}
+
+.weight-cart-view .weight img {
+    position: relative;
+    top: 1.5px;
+    left: 15px;
+}
+
+.weight-cart-view .date {
+    font-size: 10px;
+    font-style: italic;
+    position: absolute;
+    left: 40px;
+    bottom: -30px;
+}
+
+.weight-cart-view canvas {
+    height: 220px !important;
+    padding-left: 10px;
+}
+
+.cart-view-title {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.cart-view-title h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+}
+
+.cart-view-title p {
+    margin: 0;
+    float: right;
+}
+
+.cart-view-title p label {
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.cart-view-title p input {
+    border: 1px solid #5020d4;
+    font-size: 14px;
+    padding: 0 5px;
+    border-radius: 10px;
+    border: none;
+    /*     width: 120px; */
+}
+
+.cart-view-title p i {}

@@ -34,19 +34,18 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [{
-      label: "Downloads",
       lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
-      borderColor: "rgba(78, 115, 223, 1)",
+      backgroundColor: "#ffffff00",
+      borderColor: "#4696E6",
       pointRadius: 3,
-      pointBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointBorderColor: "rgba(78, 115, 223, 1)",
+      pointBackgroundColor: "#ffffff",
+      pointBorderColor: "#4072EE",
       pointHoverRadius: 3,
       pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
-      pointBorderWidth: 2,
-      data: [3000, 4800, 4583, 3800, 3584, 5800, 5000, 5842, 6952, 5879, 5000, 6800],
+      pointBorderWidth: 5,
+      data: [50, 40, 35, 50, 45, 50, 55, 65, 60, 55, 40, 50],
     }],
   },
   options: {
@@ -69,12 +68,12 @@ var myLineChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit: 7
+          maxTicksLimit: 12
         }
       }],
       yAxes: [{
         ticks: {
-          maxTicksLimit: 5,
+          maxTicksLimit: 6,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
@@ -82,11 +81,8 @@ var myLineChart = new Chart(ctx, {
           }
         },
         gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
+          color: "#EBEDF4",
           drawBorder: false,
-          borderDash: [2],
-          zeroLineBorderDash: [2]
         }
       }],
     },
@@ -110,7 +106,7 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': ' + number_format(tooltipItem.yLabel);
+          return datasetLabel + '' + number_format(tooltipItem.yLabel);
         }
       }
     }

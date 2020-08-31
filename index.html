@@ -55,6 +55,7 @@
                 <div class="row">
                     <div class="col-md-9">
                         <h2 class="page-title">My Dashboard</h2>
+                        <!-- welcome-msg card -->
                         <div class="welcome-msg">
                             <div class="msg-text">
                                 <h2>Good evening Avneet!</h2>
@@ -63,24 +64,24 @@
                             </div>
                             <img src="images/spape.png" alt="">
                         </div>
-                        <div class="row">
+                        <div class="row pb-5">
                             <div class="col-md-4">
-                                <div class="card-view">
+                                <a href="#" style="background-color: #2563FF;" class="card-view">
                                     <img src="images/004-dinner.svg" alt="">
                                     <p>Go To meal plan</p>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-md-4">
-                                <div class="card-view">
+                                <a href="#" style="background-color: #E11C30;" class="card-view">
                                     <img src="images/005-exercise.svg" alt="">
                                     <p>Workout</p>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-md-4">
-                                <div class="card-view">
+                                <a href="#" style="background-color: #14C151;" class="card-view">
                                     <img src="images/instructor.svg" alt="">
                                     <p>Coaching</p>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="row">
@@ -113,13 +114,161 @@
                                 </div>
                             </div>
                             <div class="col-md-7">
-                                <canvas id="downloadsOverviewChart"></canvas>
+                                <!-- Weight trajectory view -->
+                                <div class="weight-cart-view">
+                                    <div class="cart-view-title">
+                                        <h2>Weight trajectory</h2>
+                                        <p><label for="from">from</label><input id="from" type="date"><label
+                                                for="to">to</label><input id="to" type="date"></p>
+                                    </div>
+                                    <canvas id="downloadsOverviewChart"></canvas>
+                                    <div class="weight"><span>Weight</span><img src="images/line.svg" alt=""></div>
+                                    <div class="date"><span>Date</span><img src="images/line.svg" alt=""></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 pr-0">
                         <div class="profile-overview">
-
+                            <div class="nav uk-inline">
+                                <button type="button"><i class="fal fa-cog"></i></button>
+                                <div uk-dropdown="mode: click">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Log out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <div class="profile-pic"></div>
+                                <a href="#">Avneet Arora</a>
+                                <p>Athletic Coach</p>
+                                <ul>
+                                    <li>
+                                        <p>Height</p>
+                                        <button>185cm<i class="fal fa-pen"></i></button>
+                                    </li>
+                                    <li>
+                                        <p>Height</p>
+                                        <button>185cm<i class="fal fa-pen"></i></button>
+                                    </li>
+                                    <li>
+                                        <p>Height</p>
+                                        <button>185cm<i class="fal fa-pen"></i></button>
+                                    </li>
+                                    <li>
+                                        <p>Height</p>
+                                        <button>185cm<i class="fal fa-pen"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="stats">
+                                <div class="cart-view-title">
+                                    <h2>My stats</h2>
+                                    <p><button type="button">Last week<i class="fas fa-caret-down"></i></button>
+                                        <div uk-dropdown="mode: click">
+                                            <ul>
+                                                <li><a href="#">Last week</a></li>
+                                            </ul>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="line-chart">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Mon</th>
+                                                <th>Tue</th>
+                                                <th>Wed</th>
+                                                <th>Thu</th>
+                                                <th>Fri</th>
+                                                <th>Sat</th>
+                                                <th>Sun</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="layer1">
+                                                        <div class="layer-2">
+                                                            <div class="layer-3">
+                                                                <div class="layer-4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="layer1">
+                                                        <div class="layer-2">
+                                                            <div class="layer-3">
+                                                                <div class="layer-4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="layer1">
+                                                        <div class="layer-2">
+                                                            <div class="layer-3">
+                                                                <div class="layer-4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="layer1">
+                                                        <div class="layer-2">
+                                                            <div class="layer-3">
+                                                                <div class="layer-4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="layer1">
+                                                        <div class="layer-2">
+                                                            <div class="layer-3">
+                                                                <div class="layer-4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="layer1">
+                                                        <div class="layer-2">
+                                                            <div class="layer-3">
+                                                                <div class="layer-4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="layer1">
+                                                        <div class="layer-2">
+                                                            <div class="layer-3">
+                                                                <div class="layer-4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="line-chart-info">
+                                        <li><i class="fas fa-circle" style="color: #E8523F;"></i>Calories consumed</li>
+                                        <li><i class="fas fa-circle" style="color: #F8B849;"></i>Targeted weight</li>
+                                        <li><i class="fas fa-circle" style="color: #F8C0D9;"></i>Water consumed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="stats-btn">
+                                <a href="#"><img src="images/001-water-drop.svg" alt=""><span>Water</span><i
+                                        class="fas fa-chevron-right"></i></a>
+                                <a href="#"><img src="images/002-weight-scale.svg" alt=""><span>Weight</span><i
+                                        class="fas fa-chevron-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
