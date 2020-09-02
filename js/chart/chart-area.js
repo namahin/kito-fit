@@ -11,7 +11,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
     sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
     dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
     s = '',
-    toFixedFix = function(n, prec) {
+    toFixedFix = function (n, prec) {
       var k = Math.pow(10, prec);
       return '' + Math.round(n * k) / k;
     };
@@ -34,6 +34,7 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [{
+      defaultFontFamily: "Nunito Sans",
       lineTension: 0.3,
       backgroundColor: "#ffffff00",
       borderColor: "#4696E6",
@@ -76,7 +77,7 @@ var myLineChart = new Chart(ctx, {
           maxTicksLimit: 6,
           padding: 10,
           // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
+          callback: function (value, index, values) {
             return '' + number_format(value);
           }
         },
@@ -90,6 +91,7 @@ var myLineChart = new Chart(ctx, {
       display: false
     },
     tooltips: {
+      defaultFontFamily: "Nunito Sans",
       backgroundColor: "#4e73df",
       bodyFontColor: "#fff",
       titleMarginBottom: 10,
@@ -104,9 +106,9 @@ var myLineChart = new Chart(ctx, {
       mode: 'index',
       caretPadding: 10,
       callbacks: {
-        label: function(tooltipItem, chart) {
+        label: function (tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + '' + number_format(tooltipItem.yLabel);
+          return datasetLabel + number_format(tooltipItem.yLabel) + 'KG';
         }
       }
     }
