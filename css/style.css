@@ -5,6 +5,28 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+/* scrollbar css */
+::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dfdfdf;
+    cursor: pointer !important;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #616161;
+
+}
+
+/* scrollbar css end */
 p,
 a,
 i,
@@ -60,9 +82,10 @@ a:hover {
     bottom: 0;
     overflow: hidden;
     transition: linear .5s;
-    
+
 }
-.left-sidebar:hover{
+
+.left-sidebar:hover {
     overflow-y: auto;
     transition: linear .5s;
 }
@@ -293,23 +316,23 @@ a:hover {
 .cart-view-title p {
     margin: 0;
     float: right;
-}
-
-.cart-view-title p label {
-    margin-bottom: 0;
-    padding: 0 10px;
-}
-
-.cart-view-title p input {
-    border: 1px solid #5020d4;
+    color: gray;
     font-size: 14px;
-    padding: 0 5px;
-    border-radius: 10px;
-    border: none;
-    /*     width: 120px; */
 }
 
-.cart-view-title p i {}
+.cart-view-title p button {
+    background: transparent;
+    border: none;
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.cart-view-title p button i {
+    margin-left: 5px;
+    color: gray;
+}
+
 
 
 /* profile-overview css */
@@ -437,6 +460,7 @@ a:hover {
     position: relative;
     margin: auto;
     margin-bottom: 15px;
+    border-radius: 50%;
 }
 
 .stats {
